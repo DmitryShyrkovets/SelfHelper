@@ -1,0 +1,15 @@
+﻿@model SelfHelper.ViewModels.CheckEmail
+
+<form class="recovery-form" asp-action="Recovery" asp-controller="Account" asp-anti-forgery="true">
+    <h2>Восстановление данных</h2>
+    <div class="validation" asp-validation-summary="ModelOnly"></div>
+    <input autocomplete="off" type="text" asp-for="Email" placeholder="Введите почту">
+    <div class="buttons">
+        <input type="submit" value="Отправить данные">
+        <a asp-action="Login" asp-controller="Account">Отмена</a>
+    </div>
+</form>
+@section scripts{
+    <script src="~/lib/jquery-validation/dist/jquery.validate.min.js"></script>
+    <script src="~/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.min.js"></script>
+}

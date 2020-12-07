@@ -1,0 +1,26 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - SelfHelper</title>
+
+    <link rel="stylesheet" href="~/css/authorization.css" />
+
+    <link href="https://fonts.googleapis.com/css2?family=Grandstander:ital@1&display=swap" rel="stylesheet" />
+
+    <link href="~/images/icon.png" rel="shortcut icon" runat="server" type="image/x-icon" />
+    <link href="~/images/icon.png" rel="icon" runat="server" type="image/ico" />
+</head>
+<body>
+    <div class="container">
+        <main role="main" class="pb-3">
+            @RenderBody()
+        </main>
+    </div>
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/authorization.js"></script>
+    @RenderSection("Scripts", required: false)
+</body>
+</html>

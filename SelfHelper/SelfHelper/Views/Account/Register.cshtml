@@ -1,0 +1,24 @@
+﻿
+@model SelfHelper.ViewModels.RegisterModel
+
+<form class="registration-form" asp-action="Register" asp-controller="Account" asp-anti-forgery="true">
+    <h2>Регистрация</h2>
+    <div class="validation" asp-validation-summary="ModelOnly"></div>
+    <div>
+        <div class="inputs">
+            <input autocomplete="off" type="text" asp-for="Login" placeholder="Введите логин" />
+            <input autocomplete="off" type="text" asp-for="Email" placeholder="Введите почту" />
+            <input asp-for="Password" placeholder="Введите пароль" />
+            <input asp-for="ConfirmPassword" placeholder="Повторите пароль" />
+        </div>
+        <div class="buttons">
+            <input type="submit" value="Регистрация" />
+            <a asp-action="Login" asp-controller="Account">Отмена</a>
+        </div>
+    </div>
+</form>
+
+@section scripts{
+    <script src="~/lib/jquery-validation/dist/jquery.validate.min.js"></script>
+    <script src="~/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.min.js"></script>
+}

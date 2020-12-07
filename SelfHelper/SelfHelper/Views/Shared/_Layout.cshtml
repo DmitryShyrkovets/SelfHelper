@@ -1,0 +1,54 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - SelfHelper</title>
+
+    <link rel="stylesheet" href="~/css/header.css"/>
+    <link rel="stylesheet" href="~/css/default.css"/>
+    <link rel="stylesheet" href="~/css/index.css"/>
+    <link rel="stylesheet" href="~/css/diary.css"/>
+    <link rel="stylesheet" href="~/css/note.css"/>
+    <link rel="stylesheet" href="~/css/target.css"/>
+    <link rel="stylesheet" href="~/css/Board.css"/>
+
+    <link href="https://fonts.googleapis.com/css2?family=Grandstander:ital@1&display=swap" rel="stylesheet" />
+
+    <link href="~/images/icon.png" rel="shortcut icon" runat="server" type="image/x-icon" />
+    <link href="~/images/icon.png" rel="icon" runat="server" type="image/ico" />
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="menu">
+                <div class="logo">
+                    <a asp-action = "Index" asp-controller = "Home">
+                        <img src="~/images/icon_large.png" alt="logo">
+                    </a>
+                </div>
+                <nav>
+                    <div>
+                        <a asp-action = "Diary" asp-controller = "Home">Дневник</a>
+                    </div>
+                    <div>
+                        <a asp-action = "Note" asp-controller = "Home">Заметки</a>
+                    </div>
+                    <div>
+                        <a asp-action = "Target" asp-controller = "Home">Цели</a>
+                    </div>
+                    <div>
+                        <a asp-action = "Board" asp-controller = "Home">Доска</a>
+                    </div>
+                </nav>
+                <div class="exit">
+                    <a asp-action = "Logout" asp-controller = "Account">Выйти</a>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main role="main">
+        @RenderBody()
+    </main>
+</body>
+</html>

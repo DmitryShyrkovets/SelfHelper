@@ -1,0 +1,205 @@
+
+.sheet {
+    background-color: #424874;
+    width: 50%;
+    height: 540px;
+    text-align: left;
+    padding: 15px;
+    overflow: auto;
+    word-wrap: break-word;
+    border-radius: 10px;
+}
+
+div.button {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.button h2{
+    background-color: #424874;
+    color: #d6e5e3;
+    padding: 10px;
+    border-radius: 50px;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    font-size: 14pt;
+    border: 3px #424874 solid;
+}
+
+.button :hover {
+    background-color: #d6e5e3;
+    color: #424874;
+    transition: 0.4s;
+    cursor: pointer
+}
+
+.diary {
+    text-align: center;
+}
+
+.content {
+    display: flex;
+    justify-content: center;
+}
+
+.sheet p,
+.sheet h3 {
+    color: #d6e5e3;
+}
+
+.msg-up {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    align-items: center;
+}
+
+.msg-up div :nth-child(1) {
+    margin-right: 5px;
+}
+
+.action {
+    display: flex;
+}
+
+.action div{
+    width: 24px;
+    height: 24px;
+    background-color: #d6e5e3;
+    border-radius: 50px;
+}
+
+.action div :hover {
+    cursor: pointer
+}
+
+.action div img {
+    width: 24px;
+    height: 24px;
+
+}
+
+.statistics {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 30px;
+}
+
+.statistics h2{
+    color:  #424874;
+    margin-right: 30px;
+}
+
+form.entry-form {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+
+    border-radius: 25px;
+
+    width: 550px;
+    height: 470px;
+    background-color: #a6b1e1;
+
+    z-index: 2000;
+}
+
+.entry-form h2 {
+    margin-top: 5%;
+    text-align: center;
+    color: #424874;;
+    font-size: 25pt;
+}
+
+.entry-form div.entry-text{
+    margin-top: 7%;
+    width: 100%;
+    height: 50%;
+}
+
+.entry-text {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 40px;
+}
+
+.entry-form textarea{
+    width: 85%;
+    height: 100%;
+    resize: none;
+    background-color: #424874;
+    color: #a6b1e1;
+    padding: 5px;
+    font-size: 14pt;
+}
+
+.form-buttons {
+    display: flex;
+    justify-content: space-around;
+}
+
+.form-buttons :hover {
+    background-color: #a6b1e1;
+    color: #424874;
+    transition: 0.4s;
+    cursor: pointer
+}
+
+.form-buttons p {
+    color: #a6b1e1;
+    font-size: 16pt;
+    border: #424874 3px solid;
+    background-color: #424874;
+    border-radius: 50px;
+    padding: 10px;
+}
+
+.delete-form {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+
+    border-radius: 25px;
+
+    width: 500px;
+    height: 280px;
+    background-color: #a6b1e1;
+}
+
+.delete-form h2 {
+    margin-bottom: 30px;
+    margin-top: 30px;
+    font-size: 25pt;
+}
+
+.delete-form p {
+    font-size: 14pt;
+}
+
+.blur {
+    filter:blur(10px); 
+}
+
+.up-diary {
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 50px auto 30px auto;
+}
+
+.diary-date {
+    width: 200px;
+    padding: 7px;
+}
+
+.sheet h2{
+    color: #a6b1e1;
+    text-align: center;
+    font-size: 20pt;
+}

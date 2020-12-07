@@ -1,0 +1,107 @@
+﻿html, body, div, span, h1, h2, h3, h4, h5, h6, p, a, img, dl, dt, dd,
+ol, ul, li, form, table, caption, tr, th, td, article, aside, footer, header {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+}
+
+* {
+    font-family: 'Grandstander', cursive;
+}
+
+body {
+    background-color: #d6e5e3;
+}
+
+form.recovery-form {
+    height: 250px;
+    width: 450px;
+}
+
+.recovery-form h2 {
+    font-size: 24pt;
+    margin-bottom: 30px;
+}
+
+
+
+form {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+    background-color: #424874;
+    width: 400px;
+    height: 360px;
+    border-radius: 50px;
+    text-align: center;
+}
+
+    form.registration-form {
+        height: 425px;
+    }
+
+h2 {
+    margin-top: 30px;
+    font-size: 28pt;
+    color: #dcd6f7;
+}
+
+input {
+    font-size: 14pt;
+    color: #424874;
+    margin: 5px;
+    border-radius: 50px;
+    outline: none;
+    padding: 10px;
+}
+
+a {
+    text-decoration: none;
+    color: #dcd6f7;
+}
+
+div.inputs {
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+input.input-validation-error {
+    border: 2px solid #b94a48;
+}
+
+li {
+    list-style-type: none;
+    color: #dcd6f7;
+    font-weight: 900;
+    font-size: 11pt;
+}
+
+ul {
+    margin-left: 0;
+    padding-left: 0;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.buttons {
+    margin-top: 10px;
+}
+
+    .buttons input,
+    .buttons a {
+        font-size: 14pt;
+        background-color: #424874;
+        color: #dcd6f7;
+        border: solid 2px #dcd6f7;
+        border-radius: 50px;
+        padding: 10px;
+        cursor: pointer;
+    }
+
+a.forgot:hover {
+    border-bottom: 1px solid #dcd6f7;
+}

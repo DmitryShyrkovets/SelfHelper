@@ -1,0 +1,20 @@
+﻿@model SelfHelper.ViewModels.LoginModel
+
+<form class="login-form" asp-action="Login" asp-controller="Account" asp-anti-forgery="true">
+    <h2>Вход на сайт</h2>
+    <div class="validation" asp-validation-summary="ModelOnly"></div>
+    <div class="inputs">
+        <input autocomplete="off" type="text" asp-for="Login" placeholder="Введите логин" />
+        <input autocomplete="off" asp-for="Password" placeholder="Введите пароль" />
+    </div>
+    <a asp-action="Recovery" asp-controller="Account" class="forgot">Забыли данные?</a>
+    <div class="buttons">
+        <input type="submit" value="Войти" />
+        <a asp-action="Register" asp-controller="Account">Регистрация</a>
+    </div>
+</form>
+
+@section scripts{
+    <script src="~/lib/jquery-validation/dist/jquery.validate.min.js"></script>
+    <script src="~/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.min.js"></script>
+}

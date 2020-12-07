@@ -1,0 +1,30 @@
+﻿<div class="board-content">
+    <div>
+        <canvas id="myCanvas">
+            Ваш браузер не поддерживает Canvas
+        </canvas>
+    </div>
+    <div class="insruments">
+        <div class="board-pen">
+            <img src="~/images/pen.png" alt="">
+        </div>
+        <div class="board-eraser">
+            <img src="~/images/eraser.png" alt="">
+        </div>
+        <div>
+            <input type="number" id="size" name="fontSize" min="1" max="50" value="10">
+        </div>
+        <div>
+            <input type="color" id="pen-color" name="penColor" value="#424874">
+        </div>
+        <div>
+            <input type="color" id="bg-color" name="bgColor" value="#e7e5f5">
+        </div>
+        <div class="clear">
+            <img src="~/images/trash_basket.png" alt="">
+        </div>
+    </div>
+</div>
+
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/js/Board.js"></script>
