@@ -18,6 +18,7 @@ namespace SelfHelper.Controllers
             db = context;
         }
 
+        [Authorize]
         public IActionResult Index()
         {
             return View();

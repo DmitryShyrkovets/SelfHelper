@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "E:\\GIT\\Schizoids\\SelfHelper\\SelfHelper\\SelfHelper.csproj": {}
+    "E:\\GIT\\SelfHelper\\SelfHelper\\SelfHelper\\SelfHelper.csproj": {}
   },
   "projects": {
-    "E:\\GIT\\Schizoids\\SelfHelper\\SelfHelper\\SelfHelper.csproj": {
+    "E:\\GIT\\SelfHelper\\SelfHelper\\SelfHelper\\SelfHelper.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\GIT\\Schizoids\\SelfHelper\\SelfHelper\\SelfHelper.csproj",
+        "projectUniqueName": "E:\\GIT\\SelfHelper\\SelfHelper\\SelfHelper\\SelfHelper.csproj",
         "projectName": "SelfHelper",
-        "projectPath": "E:\\GIT\\Schizoids\\SelfHelper\\SelfHelper\\SelfHelper.csproj",
+        "projectPath": "E:\\GIT\\SelfHelper\\SelfHelper\\SelfHelper\\SelfHelper.csproj",
         "packagesPath": "C:\\Users\\Dimon\\.nuget\\packages\\",
-        "outputPath": "E:\\GIT\\Schizoids\\SelfHelper\\SelfHelper\\obj\\",
+        "outputPath": "E:\\GIT\\SelfHelper\\SelfHelper\\SelfHelper\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Microsoft\\Xamarin\\NuGet\\"
@@ -63,6 +63,16 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.AspNetCore.App.Ref",
+              "version": "[3.1.10, 3.1.10]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Host.win-x64",
+              "version": "[3.1.10, 3.1.10]"
+            }
+          ],
           "frameworkReferences": {
             "Microsoft.AspNetCore.App": {
               "privateAssets": "none"
@@ -71,7 +81,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.100\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.101\\RuntimeIdentifierGraph.json"
         }
       }
     }

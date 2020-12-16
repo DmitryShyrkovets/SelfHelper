@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "K44eLc4LJOTwaz2vWwGfv9uOe95srVnBpWiErV5ZPZmtf47L7CcosjXFyBUTJ2CDq45UGvZI+xqIA7n2FQ/o/Q==",
+  "dgSpecHash": "Uj71EoWIhslzlQbWTjTWEcyhpfWnqU8e5NmJDNPGOuSIijE5RU5e8RclyktnKqGEBqe9GC7xSrgZbWQJ9lwxSw==",
   "success": true,
-  "projectFilePath": "E:\\GIT\\Schizoids\\SelfHelper\\SelfHelper\\SelfHelper.csproj",
+  "projectFilePath": "E:\\GIT\\SelfHelper\\SelfHelper\\SelfHelper\\SelfHelper.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Dimon\\.nuget\\packages\\mailkit\\2.9.0\\mailkit.2.9.0.nupkg.sha512",
     "C:\\Users\\Dimon\\.nuget\\packages\\microsoft.bcl.asyncinterfaces\\1.1.1\\microsoft.bcl.asyncinterfaces.1.1.1.nupkg.sha512",
@@ -105,7 +105,9 @@
     "C:\\Users\\Dimon\\.nuget\\packages\\system.xml.readerwriter\\4.3.0\\system.xml.readerwriter.4.3.0.nupkg.sha512",
     "C:\\Users\\Dimon\\.nuget\\packages\\system.xml.xdocument\\4.3.0\\system.xml.xdocument.4.3.0.nupkg.sha512",
     "C:\\Users\\Dimon\\.nuget\\packages\\system.xml.xmldocument\\4.3.0\\system.xml.xmldocument.4.3.0.nupkg.sha512",
-    "C:\\Users\\Dimon\\.nuget\\packages\\system.xml.xmlserializer\\4.3.0\\system.xml.xmlserializer.4.3.0.nupkg.sha512"
+    "C:\\Users\\Dimon\\.nuget\\packages\\system.xml.xmlserializer\\4.3.0\\system.xml.xmlserializer.4.3.0.nupkg.sha512",
+    "C:\\Users\\Dimon\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\3.1.10\\microsoft.aspnetcore.app.ref.3.1.10.nupkg.sha512",
+    "C:\\Users\\Dimon\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\3.1.10\\microsoft.netcore.app.host.win-x64.3.1.10.nupkg.sha512"
   ],
   "logs": []
 }

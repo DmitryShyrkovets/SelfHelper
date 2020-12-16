@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Microsoft.EntityFrameworkCore;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
@@ -154,6 +155,48 @@ namespace SelfHelper.Models
                         DateTimeSecond = new DateTime(2020, 02, 21, 15, 00, 00)
                     }
                 );
+                context.SaveChanges();
+            }
+
+            try
+            {
+                var result = context.DiaryViews.Any();
+            }
+            catch (Exception)
+            {
+                context.Database.ExecuteSqlRaw(@"CREATE VIEW DiaryView AS 
+                                            SELECT c.Id AS 'Id', c.Text AS 'Text', c.DateTime AS 'DateTime', p.Login AS 'User'
+                                            FROM Diaries c
+                                            INNER JOIN Users p on p.Id = c.UserId");
+
+                context.SaveChanges();
+            }
+
+            try
+            {
+                var result = context.NoteViews.Any();
+            }
+            catch (Exception)
+            {
+                context.Database.ExecuteSqlRaw(@"CREATE VIEW NoteView  AS 
+                                            SELECT c.Id AS 'Id', c.Topic AS 'Topic', c.Title AS 'Title',  c.Text AS 'Text', c.DateTime AS 'DateTime', c.Important AS 'Important', p.Login AS 'User'
+                                            FROM Notes c
+                                            INNER JOIN Users p on p.Id = c.UserId");
+
+                context.SaveChanges();
+            }
+
+            try
+            {
+                var result = context.TargetViews.Any();
+            }
+            catch (Exception)
+            {
+                context.Database.ExecuteSqlRaw(@"CREATE VIEW TargetView  AS 
+                                            SELECT c.Id AS 'Id',  c.Text AS 'Text', c.DateTimeFirst AS 'DateTimeFirst', c.DateTimeSecond AS 'DateTimeSecond', c.Status AS 'Status', p.Login AS 'User'
+                                            FROM Targets c
+                                            INNER JOIN Users p on p.Id = c.UserId");
+
                 context.SaveChanges();
             }
         }

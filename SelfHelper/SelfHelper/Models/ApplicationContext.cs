@@ -38,10 +38,6 @@ namespace SelfHelper.Models
         {
             Database.EnsureCreated();
 
-            /*Database.ExecuteSqlRaw(@"CREATE VIEW DiaryView AS 
-                                            SELECT c.Id AS Id, c.Text AS Text, c.DateTime AS DateTime, p.Login AS User
-                                            FROM Entries c
-                                            INNER JOIN Users p on p.Id = c.UserId");*/
         }
     }
 }
