@@ -88,7 +88,7 @@ async function LoadEntries(){
             $('.form-buttons').append('<div class = "save"><p>Сохранить</p></div>');
             $('.form-buttons').append('<div class = "cancel"><p>Отмена</p></div>');
             $('.content').toggleClass('blur');
-            $('.dropdown').toggleClass('blur');
+            $('.up-diary').toggleClass('blur');
             $('.button').toggleClass('blur');
             $('.statistics').toggleClass('blur');
 
@@ -100,7 +100,7 @@ async function LoadEntries(){
                 check = !check;
                 $('.entry-form').remove();
                 $('.content').toggleClass('blur');
-                $('.dropdown').toggleClass('blur');
+                $('.up-diary').toggleClass('blur')
                 $('.button').toggleClass('blur');
                 $('.statistics').toggleClass('blur');
             });
@@ -123,7 +123,7 @@ async function LoadEntries(){
 
                         $('.entry-form').remove();
                         $('.content').toggleClass('blur');
-                        $('.dropdown').toggleClass('blur');
+                        $('.up-diary').toggleClass('blur')
                         $('.button').toggleClass('blur');
                         $('.statistics').toggleClass('blur');
                                
@@ -150,7 +150,7 @@ async function LoadEntries(){
             $('.form-buttons').append('<div class = "del"><p>Удалить</p></div>');
             $('.form-buttons').append('<div class = "cancel"><p>Отмена</p></div>');
             $('.content').toggleClass('blur');
-            $('.dropdown').toggleClass('blur');
+            $('.up-diary').toggleClass('blur')
             $('.button').toggleClass('blur');
             $('.statistics').toggleClass('blur');
 
@@ -160,7 +160,7 @@ async function LoadEntries(){
                 check = !check;
                 $('.delete-form').remove();
                 $('.content').toggleClass('blur');
-                $('.dropdown').toggleClass('blur');
+                $('.up-diary').toggleClass('blur')
                 $('.button').toggleClass('blur');
                 $('.statistics').toggleClass('blur');
             });
@@ -169,7 +169,7 @@ async function LoadEntries(){
                 check = !check;
                 $('.delete-form').remove();
                 $('.content').toggleClass('blur');
-                $('.dropdown').toggleClass('blur');
+                $('.up-diary').toggleClass('blur')
                 $('.button').toggleClass('blur');
                 $('.statistics').toggleClass('blur');
             });
@@ -213,7 +213,7 @@ $('.button h2').click(function(){
         $('.form-buttons').append('<div class = "add"><p>Добавить</p></div>');
         $('.form-buttons').append('<div class = "cancel"><p>Отмена</p></div>');
         $('.content').toggleClass('blur');
-        $('.dropdown').toggleClass('blur');
+        $('.up-diary').toggleClass('blur')
         $('.button').toggleClass('blur');
         $('.statistics').toggleClass('blur');
 
@@ -227,7 +227,7 @@ $('.button h2').click(function(){
             check = !check;
             $('.entry-form').remove();
             $('.content').toggleClass('blur');
-            $('.dropdown').toggleClass('blur');
+            $('.up-diary').toggleClass('blur')
             $('.button').toggleClass('blur');
             $('.statistics').toggleClass('blur');
         });
@@ -249,7 +249,7 @@ $('.button h2').click(function(){
 
                     $('.entry-form').remove();
                     $('.content').toggleClass('blur');
-                    $('.dropdown').toggleClass('blur');
+                    $('.up-diary').toggleClass('blur')
                     $('.button').toggleClass('blur');
                     $('.statistics').toggleClass('blur');
 

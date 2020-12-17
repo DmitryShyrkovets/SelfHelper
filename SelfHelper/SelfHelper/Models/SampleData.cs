@@ -19,26 +19,12 @@ namespace SelfHelper.Models
                         Login = "zoldik",
                         Email = "zoldikds@mail.ru",
                         Password = "1111"
-                    },
-                    new User
-                    {
-                        Login = "zoldikds",
-                        Email = "zoldikds@mail.ru",
-                        Password = "3228"
-                    },
-                    new User
-                    {
-                        Login = "zaludik",
-                        Email = "zoldikds@mail.ru",
-                        Password = "1234"
                     }
                 );
                 context.SaveChanges();
             }
 
             User user = context.Users.FirstOrDefault(e => e.Login == "zoldik");
-            User user2 = context.Users.FirstOrDefault(e => e.Login == "zoldikds");
-            User user3 = context.Users.FirstOrDefault(e => e.Login == "zaludik");
 
             DateTime dateTime = new DateTime(2020, 01, 10, 22, 20, 00);
             DateTime dateTime2 = new DateTime(2020, 01, 11, 20, 20, 00);
@@ -52,25 +38,25 @@ namespace SelfHelper.Models
                     {
                         User = user,
                         DateTime = dateTime,
-                        Text = "Text 1"
+                        Text = "Сегодня была отличная погода"
                     },
                     new Diary
                     {
-                        User = user2,
+                        User = user,
                         DateTime = dateTime2,
-                        Text = "Text 2"
+                        Text = "Я потерял ключи"
                     },
                     new Diary
                     {
-                        User = user3,
+                        User = user,
                         DateTime = dateTime3,
-                        Text = "Text 3"
+                        Text = "Мне предложили интересный проект"
                     },
                     new Diary
                     {
                         User = user,
                         DateTime = dateTime4,
-                        Text = "Text 4"
+                        Text = "Настроение ничего не делать"
                     }
                 );
                 context.SaveChanges();
@@ -83,37 +69,37 @@ namespace SelfHelper.Models
                     {
                         User = user,
                         DateTime = dateTime,
-                        Title = "Title 1",
-                        Topic = "Topic 1",
+                        Title = "ПСС",
+                        Topic = "Учёба",
                         Important = true,
-                        Text = "Text 1"
+                        Text = "Сделать 20 лабу"
                     },
                     new Note
                     {
-                        User = user2,
+                        User = user,
                         DateTime = dateTime2,
-                        Title = "Title 2",
-                        Topic = "Topic 2",
+                        Title = "КС",
+                        Topic = "Учёба",
                         Important = true,
-                        Text = "Text 2"
+                        Text = "Сделать 22 лабу"
                     },
                     new Note
                     {
-                        User = user3,
+                        User = user,
                         DateTime = dateTime3,
-                        Title = "Title 3",
-                        Topic = "Topic 3",
+                        Title = "ПЗ",
+                        Topic = "КП",
                         Important = true,
-                        Text = "Text 3"
+                        Text = "Сделать 4 часть"
                     },
                     new Note
                     {
                         User = user,
                         DateTime = dateTime4,
-                        Title = "Title 4",
-                        Topic = "Topic 4",
+                        Title = "Магазин",
+                        Topic = "Домашние дела",
                         Important = true,
-                        Text = "Text 4"
+                        Text = "Купить хлеб"
                     }
                 );
                 context.SaveChanges();
@@ -125,34 +111,26 @@ namespace SelfHelper.Models
                     new Target
                     {
                         User = user,
-                        Text = "Text 1",
+                        Text = "Прыгнуть с парашютом",
                         Status = "Completed",
                         DateTimeFirst = new DateTime(2020, 01, 10, 12, 00, 00),
                         DateTimeSecond = new DateTime(2020, 01, 20, 14, 00, 00)
                     },
                     new Target
                     {
-                        User = user2,
-                        Text = "Text 2",
+                        User = user,
+                        Text = "Научиться делать сальто",
                         Status = "Completed",
                         DateTimeFirst = new DateTime(2020, 01, 10, 10, 00, 00),
                         DateTimeSecond = new DateTime(2020, 01, 20, 20, 20, 00)
                     },
                     new Target
                     {
-                        User = user3,
-                        Text = "Text 3",
+                        User = user,
+                        Text = "Накопить на ssd",
                         Status = "Completed",
                         DateTimeFirst = new DateTime(2020, 01, 10, 12, 00, 00),
                         DateTimeSecond = new DateTime(2020, 02, 02, 14, 00, 00)
-                    },
-                    new Target
-                    {
-                        User = user,
-                        Text = "Text 4",
-                        Status = "Performed",
-                        DateTimeFirst = new DateTime(2020, 02, 10, 12, 30, 00),
-                        DateTimeSecond = new DateTime(2020, 02, 21, 15, 00, 00)
                     }
                 );
                 context.SaveChanges();

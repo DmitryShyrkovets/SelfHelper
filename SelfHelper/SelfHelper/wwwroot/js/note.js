@@ -383,8 +383,8 @@ $('.add-note h2').click(function(){
         $('.note-form').append($('<h2>Добавление заметки</h2>'));
         $('.note-form').append($('<div class="up-form"></div>'));
         $('.note-form').append($('<div class="middle-form"></div>'));
-        $('.up-form').append($('<div class="dropdown typedrop-form"><div class="select"><span>Все</span><i class="fa fa-chevron-left"></i></div><ul class="dropdown-menu type-menu-form"></ul></div>'));
-        $('.up-form').append($('<input class="topic" type=text placeholder="Категория" disabled>'));
+        $('.up-form').append($('<div class="dropdown typedrop-form"><div class="select"><span>Новая категория</span><i class="fa fa-chevron-left"></i></div><ul class="dropdown-menu type-menu-form"></ul></div>'));
+        $('.up-form').append($('<input class="topic" type=text placeholder="Категория">'));
         $('.middle-form').append($('<input class="title" type=text placeholder="Заголовок">'));
         $('.middle-form').append($('<p><input type="checkbox" class="important"/>Важное</p>'));
         $('.note-form').append($('<div class = "note-text"><textarea class = "text" placeholder="Напишите тут подробности"></textarea></div>'));
