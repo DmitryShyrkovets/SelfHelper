@@ -1,13 +1,9 @@
-/*let selectedColor = document.getElementById("selectedColor");
-let color = getComputedStyle(selectedColor).backgroundColor;
-*/
-
 let usePen = true;
 let draw = false;
 
 let thicknessValue = $('#size').attr('value');
 let color = $('#pen-color').attr('value');
-let bgColor = $('#bg-color').attr('value');
+let bgColor = '#e7e5f5';
 
 let mouse = { x: 0, y: 0 };
 
@@ -66,11 +62,6 @@ $('.board-eraser').click(function(){
 
 $('#pen-color').change(function(event){
     color = event.target.value;
-});
-
-$('#bg-color').change(function(event){
-    bgColor = event.target.value;
-    canvas.style.backgroundColor = bgColor;
 });
 
 $('#size').change(function(event){

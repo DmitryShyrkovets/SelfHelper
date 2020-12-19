@@ -55,8 +55,7 @@ canvas {
     font-size: 12pt;
 }
 
-#pen-color,
-#bg-color {
+#pen-color {
     border: none;
     background-color: #d6e5e3;
     outline: none;
