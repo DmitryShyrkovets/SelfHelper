@@ -25,6 +25,12 @@ form.recovery-form {
     margin-bottom: 30px;
 }
 
+.buttons :hover {
+    background-color: #d6e5e3;
+    color: #424874;
+    transition: 0.4s;
+    cursor: pointer
+}
 
 
 form {
